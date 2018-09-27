@@ -1,0 +1,9 @@
+{
+  "name": "measure-normal-line-height",
+  "version": "1.0.0",
+  "description": "Measure normal line height in pixels, for specific font-family and font-size, in current browser.",
+  "main": "index.js",
+  "author": "Xdudu",
+  "repository": "https://github.com/Xdudu/measure-normal-line-height",
+  "license": "MIT"
+}
