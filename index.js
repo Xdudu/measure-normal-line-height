@@ -14,7 +14,7 @@ export default function measureNormalLineHeight(fontFamily, fontSize) {
   if (fontSize) targetNode.style.fontSize = fontSize + 'px'
 
   targetNode.innerHTML = ' '
-  targetRect = targetNode.getBoundingClientRect()
+  const targetRect = targetNode.getBoundingClientRect()
 
   return targetRect.height
 }
