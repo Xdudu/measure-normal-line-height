@@ -1,7 +1,7 @@
 export default function measureNormalLineHeight(fontFamily, fontSize) {
-  const targetNodeId = "NORMAL_LINE_HEIGHT_MEASURE_NODE"
+  var targetNodeId = "NORMAL_LINE_HEIGHT_MEASURE_NODE"
 
-  let targetNode = document.getElementById(targetNodeId)
+  var targetNode = document.getElementById(targetNodeId)
   if (!targetNode) {
     targetNode = document.createElement('div')
     targetNode.id = targetNodeId
@@ -14,7 +14,7 @@ export default function measureNormalLineHeight(fontFamily, fontSize) {
   if (fontSize) targetNode.style.fontSize = fontSize + 'px'
 
   targetNode.innerHTML = ' '
-  const targetRect = targetNode.getBoundingClientRect()
+  var targetRect = targetNode.getBoundingClientRect()
 
   return targetRect.height
 }
